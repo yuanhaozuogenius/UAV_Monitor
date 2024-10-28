@@ -90,7 +90,7 @@ getNumberList()
   // height: calc(100vh - 200px);
   height: 100%;
   //padding: 2vh 0;
-  padding: 200px 0;
+  padding: 100px 0;
 
   .page-container {
     height: 100%;
@@ -116,7 +116,7 @@ getNumberList()
   }
 
   .panel {
-    flex-basis: 35%; // 每个折线图的初始宽度，占30%空间
+    flex-basis: 45%; // 每个折线图的初始宽度，占30%空间
     flex-grow: 1; // 允许每个折线图根据可用空间拉伸
     flex-shrink: 1; // 当空间不足时允许压缩
     box-sizing: border-box;
