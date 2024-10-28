@@ -1,0 +1,202 @@
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{
+  margin: 0;
+  padding: 0;
+}
+/* fade-slide */
+.fade-slide-leave-active,
+.fade-slide-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-slide-enter-from {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.fade-slide-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+.leftfix {
+  float: left;
+}
+
+.rightfix {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1920) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// 时间筛选框的样式
+.selectStyle {
+ 
+
+  .el-picker-panel,
+  .el-picker-panel__footer,
+  .el-picker-panel__sidebar{
+    // 时间下拉框的背景颜色
+    background-color: #071952 !important;
+    // background-color: #00337C !important;
+    // border: 0.5px solid #d2e0fb;
+    box-shadow: none;
+    // 选定最近一周/最近一个月/最近三个月的字体颜色
+    .el-picker-panel__shortcut{
+      color:#fff
+    }
+
+    .el-input__wrapper{
+      background-color: transparent;
+      // 选定日期的字体颜色
+      .el-input__inner{
+        color: #fff !important;
+      }
+    }
+  }
+  // 选择时间范围的背景颜色
+  .el-date-table td.in-range div{
+    background-color: #7C93C3 !important;
+  }
+  .el-picker__poppe{
+    border: none;
+  }
+  .el-date-picker__header-label,
+  .el-year-table td .cell,
+  .el-date-range-picker__content .el-date-range-picker__header div,
+  .el-date-table th,
+  .el-date-table td span {
+    // 时间下拉框的字体颜色
+    color: #fff !important;
+  }
+  .el-date-table td.today span {
+    // 当前日期的字体颜色
+    color: #AEE2FF !important;
+  }
+  .el-date-table td.end-date .el-date-table-cell__text, .el-date-table td.start-date .el-date-table-cell__text{
+    // 选定的开始日期和结束日期的背景颜色
+    background-color:#5FBDFF
+  }
+  // 清空按钮鼠标移入的背景颜色
+  .el-button.is-text:not(.is-disabled):hover {
+    background-color: #7C93C3;
+  }
+  // 清空按钮的字体颜色和背景颜色
+  .el-button.is-text{
+    border: 0.5px solid #fff;
+    background-color: #7C93C3;
+    color: #fff;
+  }
+  // 确定按钮的字体颜色和背景颜色
+  .el-button.is-plain{
+    border: 0.5px solid #fff;
+    background-color: #7C93C3;
+    color: #fff;
+  }
+}
+
+// 选择器的样式
+.el-select {
+  // 选择器的背景颜色和边框样式
+  .el-input__wrapper {
+    background-color: #2b3467;
+    box-shadow: none;
+    border: 0.5px solid #d2e0fb;
+    
+  }
+  // 选择器的字体颜色
+  .el-input__inner{
+    color: #8eaccd ;
+  }
+}
+// 选择器的下拉框的样式
+.el-popper.is-light{
+  // 选择器的下拉框背景颜色
+  background-color: #071952 !important;
+  // background-color: #00337C !important;
+  border: 0.5px solid #d2e0fb;
+  box-shadow: none;
+}
+.el-select-dropdown__item{
+  // 选择器的下拉框字体颜色
+  color: #fff  !important;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+  // 选择器的下拉框鼠标移入的背景颜色
+  background-color: #7C93C3 !important;
+}
+
+// 分页器的样式
+// 分页器框背景颜色
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+  background-color:#2b3467 !important ;
+}
+.el-pagination .el-input__wrapper {
+  background-color:#2b3467 !important ;
+}
+// 分页器上下按钮字体颜色
+.el-pagination.is-background .btn-prev:disabled,.el-pagination.is-background .btn-next,.el-pagination.is-background .btn-prev{
+  color: #8eaccd !important;
+}
+.el-pagination .el-input__inner,.el-pagination__editor.el-input,
+.el-pager {
+// 分页器页数字体颜色
+  li {
+  color: #8eaccd !important;
+}
+// 分页器页数鼠标移入字体颜色
+ li.is-active{
+  color: #fff !important;
+ } }
+// 分页器前往页数 字体颜色
+ .el-pagination .el-input__inner{
+  color: #8eaccd !important;
+ }
+
+ .el-overlay {
+  background-color: #7c96ab !important;
+  opacity: 0.9;
+}
+
+// eltable转圈圈字体和图标颜色
+.el-loading-spinner .path {
+  stroke: #fff !important;
+}
+.el-loading-spinner .el-loading-text {
+  /* color: var(--el-color-primary); */
+  color: rgba(255, 255, 255, 0.8) !important;
+  // margin: 3px 0;
+  font-size: 16px;
+}
+
+.el-picker-panel__icon-btn {
+  color: #fff !important;
+}
